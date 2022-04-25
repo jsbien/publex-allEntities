@@ -1,29 +1,20 @@
-# README #
+# TCDH Entities
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This repo contains the allEntities file developed at the Trier Center for Digital Humanities with numerous special characters for display on the web.
+In particular, this can be used in the Publex tool for the display of dictionaries and the special characters they contain.
+With the help of the KomplettFont file, the characters can be viewed in the Glyphr Studio web tool.
 
-### What is this repository for? ###
+## How to use the allEntities file
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+1. Search for desired character in the allEntities file:
 
-### How do I get set up? ###
+For this, you can explore the KompLett font in the GlyphrStudio web tool. Load the file KompLettR.ttf into Glyphr Studio (www.glyphrstudio.com/online) and make sure you choose to import all glyphs. Choose your character in the Private Use Area of the font.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines ###
+2. Get the position of your character (hexadecimal code).
 
-* Writing tests
-* Code review
-* Other guidelines
+3. Look up the character's name in the allEntities.xml.
 
-### Who do I talk to? ###
+4. In the XML file of your dictionary text, replace the corresponding special character with "&" + entity name +";" (e.g. “&plusaboveu;”).
 
-* Repo owner or admin
-* Other community or team contact
+5. To display the special character, it has to be used together with the KompLettFont.
